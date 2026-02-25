@@ -66,11 +66,10 @@ ScrollReveal().reveal(".portfolio__card", {
 });
 document.addEventListener('DOMContentLoaded', () => {
   const professions = [
+    'Associate Cloud Engineer'
     'AI/ML Engineer',
     'Python Programmer',
-    'Web Designer',
-    'Tech Enthusiast',
-    'Associate Cloud Engineer'
+    'LINUX Enthusiast '
   ];
   
   const typewriterText = document.querySelector('.typewriter-text');
