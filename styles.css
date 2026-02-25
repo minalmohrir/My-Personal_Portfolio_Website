@@ -476,14 +476,13 @@ nav {
 
   /* Sections Styling */
   .section2__container {
-    display: block;
+    display: none;
     animation: fadeIn 0.5s ease;
   }
-  
+
   .section2__container.active {
     display: block;
   }
-  
   /* Common Grid Styling */
   .service__grid,
   .skills__grid,

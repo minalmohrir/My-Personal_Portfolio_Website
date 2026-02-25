@@ -119,19 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function showSection(sectionId, element) {
-  // Remove active class from all buttons and sections
-  const buttons = document.querySelectorAll('.btn');
+  // Only target tab buttons
+  const buttons = document.querySelectorAll('.section2__toggle .btn');
   const sections = document.querySelectorAll('.section2__container');
-  
+
   buttons.forEach(btn => btn.classList.remove('active'));
   sections.forEach(section => section.classList.remove('active'));
-  
-  // Add active class to clicked button and corresponding section
+
   element.classList.add('active');
   document.getElementById(sectionId).classList.add('active');
 }
 
-// Initialize default active tab
+// Initialize default tab properly
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.btn.active').click();
+  const firstTab = document.querySelector('.section2__toggle .btn');
+  if (firstTab) {
+    firstTab.click();
+  }
 });
