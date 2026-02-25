@@ -66,7 +66,7 @@ ScrollReveal().reveal(".portfolio__card", {
 });
 document.addEventListener('DOMContentLoaded', () => {
   const professions = [
-    'Associate Cloud Engineer'
+    'Associate Cloud Engineer',
     'AI/ML Engineer',
     'Python Programmer',
     'LINUX Enthusiast '
