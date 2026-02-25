@@ -130,10 +130,3 @@ function showSection(sectionId, element) {
   document.getElementById(sectionId).classList.add('active');
 }
 
-// Initialize default tab properly
-document.addEventListener('DOMContentLoaded', () => {
-  const firstTab = document.querySelector('.section2__toggle .btn');
-  if (firstTab) {
-    firstTab.click();
-  }
-});
